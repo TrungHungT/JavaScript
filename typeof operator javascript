@@ -1,0 +1,29 @@
+"use strict";
+callback([
+true,
+false,
+undefined,
+null,
+0,
+-0,
++0,
+'not string empty',
+'',
+Object,
+NaN,
+123,
+0xA,
+0x7,
+[],
+{},
+],
+function(a){
+	console.log('typeof '+a+ ' is: '+ (typeof a));
+	
+});
+function callback(arr,f){
+	var i,length=arr.length;
+	for(i=0;i<length;++i){
+		f(arr[i]);
+	}
+}
