@@ -1,0 +1,22 @@
+"use strict";
+var arr=[
+['Function.prototype',Function.prototype],
+['Object.prototype',Object.prototype],
+['Array.prototype',Array.prototype],
+['String.prototype',String.prototype],
+['Number.prototype',Number.prototype],
+['Object',Object],
+];
+
+(function(arr,f){
+	"use strict";
+	var i,j;
+	for(i=0;i<arr.length;++i){	
+		f(arr[i][0],arr[i][1]);
+	}
+})(arr,function(a,b){
+"use strict";
+console.log('*Checking obj: '+a);
+console.log(b.hasOwnProperty('constructor'));
+console.log('------------------------------');
+})
