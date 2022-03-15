@@ -1,0 +1,26 @@
+"use strict";
+callback([
+true,
+false,
+undefined,
+null,
+0,
+-0,
++0,
+'not string empty',
+'',
+Object,
+NaN,
+123,
+0xA,
+0x7,
+[],
+{},
+],
+function(){console.log('equal?'+ arguments[0] + ' vs '+ arguments[0] + (arguments[0]==arguments[0]?' yes, they euqal':' no, not euqal'))});
+function callback(arr,f){
+	var i,length=arr.length;
+	for(i=0;i<length;++i){
+		f(arr[i]);
+	}
+}
