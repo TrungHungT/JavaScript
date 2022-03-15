@@ -20,6 +20,8 @@ NaN,
 123,
 0xA,
 0x7,
+[],
+{},
 ],
 function(a){
 	if(a){
