@@ -17,7 +17,8 @@ NaN,
 [],
 {},
 ],
-function(){console.log('equal?'+ arguments[0] + ' vs '+ arguments[0] + (arguments[0]==arguments[0]?' yes, they euqal':' no, not euqal'))});
+function(){
+console.log('equal?'+ arguments[0] + ' vs '+ arguments[0] + (arguments[0]==arguments[0]?' yes, they euqal':' no, not euqal'));
 console.log('-----------------------------------');
 console.log('-----------------------------------');
 console.log('-----------------------------------');
