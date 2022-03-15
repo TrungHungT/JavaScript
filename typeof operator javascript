@@ -17,10 +17,7 @@ NaN,
 [],
 {},
 ],
-function(a){
-	console.log('typeof '+a+ ' is: '+ (typeof a));
-	
-});
+function(){console.log('typeof '+arguments[0]+ ' is: '+ (typeof a));});
 function callback(arr,f){
 	var i,length=arr.length;
 	for(i=0;i<length;++i){
