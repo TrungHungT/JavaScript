@@ -1,0 +1,30 @@
+"use strict";
+function callback(arr,f){
+	var i,length=arr.length;
+	for(i=0;i<length;++i){
+		f(arr[i]);
+	}
+}
+callback([
+true,
+false,
+undefined,
+null,
+0,
+-0,
++0,
+'not string empty',
+'',
+Object,
+NaN,
+123,
+0xA,
+0x7,
+],
+function(a){
+	if(a){
+		console.log(a+' is ' + 'Truly');
+	}else{
+		console.log(a+' is '+'Falsy');
+	}
+});
